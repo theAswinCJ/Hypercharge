@@ -1,0 +1,74 @@
+.LPsection11 {
+  padding: 10% 5%;
+  padding-bottom: 0%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section11Logo"
+    "footerLink1"
+    "footerLink2"
+    "footerLink3"
+    "footerLink4"
+    "footerLink5"
+    "footerCopyright";
+  align-items: center;
+  justify-items: center;
+}
+
+#section11Logo {
+  grid-area: section11Logo;
+  padding: 5%;
+  padding-bottom: 15%;
+}
+
+#footerLink1 {
+  grid-area: footerLink1;
+}
+
+#footerLink2 {
+  grid-area: footerLink2;
+}
+
+#footerLink3 {
+  grid-area: footerLink3;
+}
+
+#footerLink4 {
+  grid-area: footerLink4;
+}
+
+#footerLink5 {
+  grid-area: footerLink5;
+}
+
+#footerCopyright {
+  grid-area: footerCopyright;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  color: #878f9d;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.footerSubSectionBG {
+  background-color: #f8fafd;
+}
+
+.footerLinks {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: #878f9d;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 21px;
+  padding: 5%;
+}
+
+.footerSubSectionBG {
+  margin-top: 10%;
+  width: 100%;
+  padding: 5%;
+}
