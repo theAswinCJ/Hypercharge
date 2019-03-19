@@ -1,0 +1,37 @@
+.LPsection2 {
+  padding-top: 10%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas:
+    "section2Line section2Prefix"
+    "section2Title section2Title"
+    "illustration2 illustration2"
+    "section2Body section2Body";
+  align-items: center;
+  justify-items: center;
+}
+
+#section2Line {
+  justify-self: end;
+  grid-area: section2Line;
+}
+
+#section2Prefix {
+  width: 100%;
+  grid-area: section2Prefix;
+}
+
+#section2Title {
+  grid-area: section2Title;
+}
+
+#illustration2 {
+  padding: 10% 0%;
+  grid-area: illustration2;
+  width: 278px;
+}
+
+#section2Body {
+  grid-area: section2Body;
+}
