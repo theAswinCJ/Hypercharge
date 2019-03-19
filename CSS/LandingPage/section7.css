@@ -1,0 +1,81 @@
+.LPsection7 {
+  padding: 10% 5%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section7Title"
+    "illustration5"
+    "section7Icon1"
+    "section7FeatureTitle1"
+    "section7FeatureDesc1"
+    "section7Icon2"
+    "section7FeatureTitle2"
+    "section7FeatureDesc2"
+    "section7Icon3"
+    "section7FeatureTitle3"
+    "section7FeatureDesc3";
+  align-items: center;
+  justify-items: center;
+}
+
+#section7Title {
+  grid-area: section7Title;
+}
+
+#illustration5 {
+  grid-area: illustration5;
+  width: 72%;
+  padding: 10% 0%;
+  padding-bottom: 20%;
+}
+
+#section7Icon1 {
+  grid-area: section7Icon1;
+}
+
+#section7FeatureTitle1 {
+  grid-area: section7FeatureTitle1;
+}
+
+#section7FeatureDesc1 {
+  grid-area: section7FeatureDesc1;
+}
+
+#section7Icon2 {
+  grid-area: section7Icon2;
+}
+
+#section7FeatureTitle2 {
+  grid-area: section7FeatureTitle2;
+}
+
+#section7FeatureDesc2 {
+  grid-area: section7FeatureDesc2;
+}
+
+#section7Icon3 {
+  grid-area: section7Icon3;
+}
+
+#section7FeatureTitle3 {
+  grid-area: section7FeatureTitle3;
+}
+
+#section7FeatureDesc3 {
+  grid-area: section7FeatureDesc3;
+}
+
+.section7Icon {
+  margin-top: 5%;
+}
+
+.section7Title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section7Desc {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
