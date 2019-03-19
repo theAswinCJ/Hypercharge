@@ -1,8 +1,8 @@
 .LPsection2 {
-  padding-top: 10%;
+  padding: 10% 5%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 20% 80%;
   grid-template-areas:
     "section2Line section2Prefix"
     "section2Title section2Title"

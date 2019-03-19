@@ -66,6 +66,9 @@ h6 {
   letter-spacing: 0;
   text-align: center;
   line-height: 27px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 p {
@@ -132,6 +135,16 @@ a:active {
 .titleMargins {
   margin-top: 0px;
   padding-top: 3%;
+}
+
+.statistic {
+  color: #0077ff;
+  margin-bottom: 0px;
+  padding-top: 8%;
+}
+
+.statisticDesc {
+  margin-top: 5px;
 }
 
 @media (min-width: 768px) {

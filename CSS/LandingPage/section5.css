@@ -1,0 +1,50 @@
+.LPsection5 {
+  padding: 15% 5%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section5SubTitle"
+    "section5Title"
+    "section5StatTitle1"
+    "section5StatDesc1"
+    "section5StatTitle2"
+    "section5StatDesc2"
+    "section5StatTitle3"
+    "section5StatDesc3";
+  align-items: center;
+  justify-items: center;
+}
+
+#section5SubTitle {
+  grid-area: section5SubTitle;
+}
+
+#section5Title {
+  grid-area: section5Title;
+  margin-top: 5px;
+}
+
+#section5StatTitle1 {
+  grid-area: section5StatTitle1;
+}
+
+#section5StatDesc1 {
+  grid-area: section5StatDesc1;
+}
+
+#section5StatTitle2 {
+  grid-area: section5StatTitle2;
+}
+
+#section5StatDesc2 {
+  grid-area: section5StatDesc2;
+}
+
+#section5StatTitle3 {
+  grid-area: section5StatTitle3;
+}
+
+#section5StatDesc3 {
+  grid-area: section5StatDesc3;
+}
