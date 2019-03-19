@@ -1,0 +1,190 @@
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  color: #292a34;
+  letter-spacing: 0.57px;
+  text-align: center;
+  line-height: 38.4px;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 25px;
+  color: #292a34;
+  letter-spacing: 0.45px;
+  text-align: center;
+  line-height: 32.77px;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 19.2px;
+  color: #292a34;
+  letter-spacing: 0.34px;
+  text-align: center;
+  line-height: 23.68px;
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  color: #292a34;
+  letter-spacing: 0.32px;
+  text-align: center;
+  line-height: 27px;
+}
+
+h5 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  color: #292a34;
+  letter-spacing: 0.29px;
+  line-height: 24px;
+  text-align: left;
+}
+
+h6 {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 16px;
+  color: #4f5059;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 27px;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  color: #4f5059;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 23px;
+}
+
+button {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 11.2px;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  text-align: center;
+  width: 136.4px;
+  height: 38.4px;
+  border-radius: 6.25rem;
+  background-color: #0077ff;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: #292a34;
+  letter-spacing: 0.1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active {
+  color: #0077ff;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 0.71px;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 32px;
+    letter-spacing: 0.57px;
+    line-height: 40.96px;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 24px;
+    letter-spacing: 0.43px;
+    line-height: 29.6px;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 50px;
+    letter-spacing: 0.89px;
+    line-height: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+    letter-spacing: 0.71px;
+    line-height: 51.2px;
+  }
+
+  h3 {
+    font-size: 30px;
+    letter-spacing: 0.54px;
+    line-height: 37px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 64px;
+    letter-spacing: 1.14px;
+    line-height: 78px;
+  }
+
+  h2 {
+    font-size: 50px;
+    letter-spacing: 0.89px;
+    line-height: 64px;
+  }
+
+  h3 {
+    font-size: 40px;
+    letter-spacing: 0.71px;
+    line-height: 50px;
+  }
+
+  p {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 27px;
+  }
+
+  button {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    width: 170px;
+    height: 48px;
+  }
+}
