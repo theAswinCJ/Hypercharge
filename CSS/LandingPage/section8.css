@@ -1,0 +1,116 @@
+.LPsection8 {
+  padding: 10% 5%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "section8Line section8Prefix"
+    "section8Title section8Title"
+    "section8Icon1 section8Icon1"
+    "section8FeatureTitle1 section8FeatureTitle1"
+    "section8FeatureDesc1 section8FeatureDesc1"
+    "section8Icon2 section8Icon2"
+    "section8FeatureTitle2 section8FeatureTitle2"
+    "section8FeatureDesc2 section8FeatureDesc2"
+    "section8Icon3 section8Icon3"
+    "section8FeatureTitle3 section8FeatureTitle3"
+    "section8FeatureDesc3 section8FeatureDesc3"
+    "section8Icon4 section8Icon4"
+    "section8FeatureTitle4 section8FeatureTitle4"
+    "section8FeatureDesc4 section8FeatureDesc4"
+    "section8Icon5 section8Icon5"
+    "section8FeatureTitle5 section8FeatureTitle5"
+    "section8FeatureDesc5 section8FeatureDesc5";
+  align-items: center;
+  justify-items: center;
+}
+
+#section8Line {
+  justify-self: end;
+  grid-area: section8Line;
+}
+
+#section8Prefix {
+  width: 100%;
+  padding-left: 5%;
+  grid-area: section8Prefix;
+}
+
+#section8Title {
+  grid-area: section8Title;
+  padding-bottom: 10%;
+}
+
+#section8Icon1 {
+  grid-area: section8Icon1;
+}
+
+#section8FeatureTitle1 {
+  grid-area: section8FeatureTitle1;
+}
+
+#section8FeatureDesc1 {
+  grid-area: section8FeatureDesc1;
+}
+
+#section8Icon2 {
+  grid-area: section8Icon2;
+}
+
+#section8FeatureTitle2 {
+  grid-area: section8FeatureTitle2;
+}
+
+#section8FeatureDesc2 {
+  grid-area: section8FeatureDesc2;
+}
+
+#section8Icon3 {
+  grid-area: section8Icon3;
+}
+
+#section8FeatureTitle3 {
+  grid-area: section8FeatureTitle3;
+}
+
+#section8FeatureDesc3 {
+  grid-area: section8FeatureDesc3;
+}
+
+#section8Icon4 {
+  grid-area: section8Icon4;
+}
+
+#section8FeatureTitle4 {
+  grid-area: section8FeatureTitle4;
+}
+
+#section8FeatureDesc4 {
+  grid-area: section8FeatureDesc4;
+}
+
+#section8Icon5 {
+  grid-area: section8Icon5;
+}
+
+#section8FeatureTitle5 {
+  grid-area: section8FeatureTitle5;
+}
+
+#section8FeatureDesc5 {
+  grid-area: section8FeatureDesc5;
+}
+
+.section8Icon {
+  margin-top: 5%;
+}
+
+.section8Title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section8Desc {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
