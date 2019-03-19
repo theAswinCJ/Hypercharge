@@ -1,0 +1,72 @@
+.LPsection9 {
+  padding: 10% 5%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section9SubTitle"
+    "section9Title"
+    "section9Icon1"
+    "section9Desc1"
+    "section9Icon2"
+    "section9Desc2"
+    "section9Icon3"
+    "section9Desc3"
+    "section9Icon4"
+    "section9Desc4";
+  align-items: center;
+  justify-items: center;
+}
+
+#section9Title {
+  margin-top: 5px;
+  grid-area: section9Title;
+  padding-bottom: 5%;
+}
+
+#section9SubTitle {
+  grid-area: section9SubTitle;
+}
+
+#section9Icon1 {
+  grid-area: section9Icon1;
+}
+
+#section9Desc1 {
+  grid-area: section9Desc1;
+}
+
+#section9Icon2 {
+  grid-area: section9Icon2;
+}
+
+#section9Desc2 {
+  grid-area: section9Desc2;
+}
+
+#section9Icon3 {
+  grid-area: section9Icon3;
+}
+
+#section9Desc3 {
+  grid-area: section9Desc3;
+}
+
+#section9Icon4 {
+  grid-area: section9Icon4;
+}
+
+#section9Desc4 {
+  grid-area: section9Desc4;
+}
+
+.section9Icon {
+  margin-top: 13%;
+  margin-bottom: 2%;
+}
+
+.section9Desc {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
