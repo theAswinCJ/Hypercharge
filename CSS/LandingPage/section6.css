@@ -1,0 +1,61 @@
+.LPsection6 {
+  padding: 10% 5%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section6SubTitle"
+    "section6Title"
+    "section6Desc"
+    "topDeveloperBadge"
+    "topDeveloperTitle"
+    "topDeveloperDesc"
+    "editorsChoiceBadge"
+    "editorsChoiceTitle"
+    "editorsChoiceDesc";
+  align-items: center;
+  justify-items: center;
+}
+
+#section6SubTitle {
+  grid-area: section6SubTitle;
+}
+
+#section6Title {
+  margin-top: 5px;
+  grid-area: section6Title;
+}
+
+#section6Desc {
+  margin-top: 10px;
+  grid-area: section6Desc;
+  text-align: center;
+}
+
+#topDeveloperBadge {
+  padding: 10% 0%;
+  grid-area: topDeveloperBadge;
+}
+
+#topDeveloperTitle {
+  grid-area: topDeveloperTitle;
+  margin-bottom: 0px;
+}
+
+#topDeveloperDesc {
+  grid-area: topDeveloperDesc;
+}
+
+#editorsChoiceBadge {
+  padding: 10% 0%;
+  grid-area: editorsChoiceBadge;
+}
+
+#editorsChoiceTitle {
+  grid-area: editorsChoiceTitle;
+  margin-bottom: 0px;
+}
+
+#editorsChoiceDesc {
+  grid-area: editorsChoiceDesc;
+}
