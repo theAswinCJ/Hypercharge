@@ -1,0 +1,55 @@
+.LPsection1 {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "title" "illustration1" "body" "button1" "button2";
+  align-items: center;
+  justify-items: center;
+}
+
+.Header {
+  grid-area: header;
+  width: 100%;
+  padding: 10% 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "logo hamburger";
+}
+
+#section1Title {
+  grid-area: title;
+}
+
+#section1Body {
+  grid-area: body;
+}
+
+#HeaderLogo {
+  grid-area: logo;
+  align-self: left;
+  width: 120px;
+  padding-left: 15%;
+}
+
+#HeaderHamburger {
+  grid-area: hamburger;
+  justify-self: right;
+  width: 22px;
+  padding-right: 15%;
+}
+
+#illustration1 {
+  grid-area: illustration1;
+  width: 226px;
+  padding: 5% 0%;
+}
+
+#section1Button1 {
+  grid-area: button1;
+  margin: 5% 0%;
+}
+#section1Button2 {
+  grid-area: button2;
+  margin: 5% 0%;
+  margin-top: 0%;
+}
