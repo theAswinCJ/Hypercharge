@@ -3,3 +3,82 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.PrefixSubSection {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.titlePrefixLine {
+  justify-self: end;
+  align-self: center;
+  width: 28px;
+  border: 2px solid #292a34;
+  border-radius: 10px;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 20%;
+  height: 0px;
+}
+
+.prefixMargins {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.titleMargins {
+  margin-top: 0px;
+  padding-top: 3%;
+}
+
+.statistic {
+  color: #0077ff;
+  margin-bottom: 0px;
+  padding-top: 8%;
+}
+
+.statisticDesc {
+  margin-top: 5px;
+}
+
+.illustrationLarge {
+  width: 100%;
+  padding: 5% 0%;
+}
+
+.illustrationMedium {
+  width: 100%;
+  padding: 5% 0%;
+}
+
+@media (min-width: 400px) {
+  .illustrationLarge {
+    width: 80%;
+  }
+
+  .illustrationMedium {
+    width: 90%;
+  }
+}
+
+@media (min-width: 500px) {
+  .illustrationLarge {
+    width: 70%;
+  }
+
+  .illustrationMedium {
+    width: 85%;
+  }
+}
+
+@media (min-width: 560px) {
+  .illustrationLarge {
+    width: 60%;
+  }
+
+  .illustrationMedium {
+    width: 70%;
+  }
+}

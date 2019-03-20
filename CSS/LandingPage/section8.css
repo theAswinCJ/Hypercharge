@@ -1,43 +1,48 @@
 .LPsection8 {
-  padding: 10% 5%;
+  margin: 10% 5%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 100%;
   grid-template-areas:
-    "section8Line section8Prefix"
-    "section8Title section8Title"
-    "section8Icon1 section8Icon1"
-    "section8FeatureTitle1 section8FeatureTitle1"
-    "section8FeatureDesc1 section8FeatureDesc1"
-    "section8Icon2 section8Icon2"
-    "section8FeatureTitle2 section8FeatureTitle2"
-    "section8FeatureDesc2 section8FeatureDesc2"
-    "section8Icon3 section8Icon3"
-    "section8FeatureTitle3 section8FeatureTitle3"
-    "section8FeatureDesc3 section8FeatureDesc3"
-    "section8Icon4 section8Icon4"
-    "section8FeatureTitle4 section8FeatureTitle4"
-    "section8FeatureDesc4 section8FeatureDesc4"
-    "section8Icon5 section8Icon5"
-    "section8FeatureTitle5 section8FeatureTitle5"
-    "section8FeatureDesc5 section8FeatureDesc5";
+    "Section8PrefixSubSection"
+    "section8Icon1"
+    "section8FeatureTitle1"
+    "section8FeatureDesc1"
+    "section8Icon2"
+    "section8FeatureTitle2"
+    "section8FeatureDesc2"
+    "section8Icon3"
+    "section8FeatureTitle3"
+    "section8FeatureDesc3"
+    "section8Icon4"
+    "section8FeatureTitle4"
+    "section8FeatureDesc4"
+    "section8Icon5"
+    "section8FeatureTitle5"
+    "section8FeatureDesc5";
   align-items: center;
   justify-items: center;
 }
 
+#Section8PrefixSubSection {
+  grid-area: Section8PrefixSubSection;
+  grid-template-areas:
+    "section8Line section8Prefix"
+    "section8Title section8Title";
+}
+
 #section8Line {
-  justify-self: end;
   grid-area: section8Line;
 }
 
 #section8Prefix {
   width: 100%;
-  padding-left: 5%;
   grid-area: section8Prefix;
 }
 
 #section8Title {
   grid-area: section8Title;
+  padding-left: 0%;
   padding-bottom: 10%;
 }
 
@@ -113,4 +118,56 @@
 .section8Desc {
   margin-top: 0px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 350px) {
+  #Section8PrefixSubSection {
+    grid-template-columns: 23% 77%;
+  }
+}
+
+@media (min-width: 400px) {
+  #Section8PrefixSubSection {
+    grid-template-columns: 29% 71%;
+  }
+}
+
+@media (min-width: 500px) {
+  #Section8PrefixSubSection {
+    grid-template-columns: 32% 68%;
+  }
+}
+
+@media (min-width: 560px) {
+  #Section8PrefixSubSection {
+    grid-template-columns: 20% 80%;
+  }
+
+  .LPsection8 {
+    grid-column-gap: 5%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "Section8PrefixSubSection section8Icon1"
+      "Section8PrefixSubSection section8FeatureTitle1"
+      "Section8PrefixSubSection section8FeatureDesc1"
+      "section8Icon2 section8Icon3"
+      "section8FeatureTitle2 section8FeatureTitle3"
+      "section8FeatureDesc2 section8FeatureDesc3"
+      "section8Icon4 section8Icon5"
+      "section8FeatureTitle4 section8FeatureTitle5"
+      "section8FeatureDesc4 section8FeatureDesc5";
+  }
+
+  .s8align {
+    text-align: left;
+    justify-self: left;
+  }
+
+  .section8Icon {
+    margin-top: 10%;
+  }
+
+  #section8Icon1 {
+    margin-top: 5%;
+  }
 }

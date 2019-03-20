@@ -1,5 +1,5 @@
 .LPsection5 {
-  padding: 10% 5%;
+  margin: 10% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -47,4 +47,17 @@
 
 #section5StatDesc3 {
   grid-area: section5StatDesc3;
+}
+
+@media (min-width: 560px) {
+  .LPsection5 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section5SubTitle section5SubTitle"
+      "section5Title section5Title"
+      "section5StatTitle1 section5StatTitle2"
+      "section5StatDesc1 section5StatDesc2"
+      "section5StatTitle3 section5StatTitle3"
+      "section5StatDesc3 section5StatDesc3";
+  }
 }

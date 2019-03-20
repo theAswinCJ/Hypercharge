@@ -1,5 +1,5 @@
 .LPsection9 {
-  padding: 10% 5%;
+  margin: 10% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -69,4 +69,27 @@
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+@media (min-width: 560px) {
+  .LPsection9 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section9SubTitle section9SubTitle"
+      "section9Title section9Title"
+      "section9Icon1 section9Icon2"
+      "section9Desc1 section9Desc2"
+      "section9Icon3 section9Icon4"
+      "section9Desc3 section9Desc4";
+  }
+
+  .section9Desc {
+    padding: 5%;
+    align-self: start;
+  }
+
+  .section9Icon {
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
 }

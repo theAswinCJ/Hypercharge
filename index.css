@@ -84,12 +84,12 @@ p {
 button {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 11.2px;
+  font-size: 12.32px;
   color: #ffffff;
   letter-spacing: 0.2px;
   text-align: center;
-  width: 136.4px;
-  height: 38.4px;
+  width: 90%;
+  height: 42px;
   border-radius: 6.25rem;
   background-color: #0077ff;
   border: none;
@@ -116,35 +116,6 @@ a {
 
 a:active {
   color: #0077ff;
-}
-
-.titlePrefixLine {
-  width: 28px;
-  border: 2px solid #292a34;
-  border-radius: 10px;
-  margin: 0px;
-  padding: 0px;
-  margin-right: 20%;
-}
-
-.prefixMargins {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.titleMargins {
-  margin-top: 0px;
-  padding-top: 3%;
-}
-
-.statistic {
-  color: #0077ff;
-  margin-bottom: 0px;
-  padding-top: 8%;
-}
-
-.statisticDesc {
-  margin-top: 5px;
 }
 
 @media (min-width: 768px) {

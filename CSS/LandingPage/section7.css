@@ -1,5 +1,5 @@
 .LPsection7 {
-  padding: 10% 5%;
+  margin: 10% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -25,9 +25,6 @@
 
 #illustration5 {
   grid-area: illustration5;
-  width: 72%;
-  padding: 10% 0%;
-  padding-bottom: 20%;
 }
 
 #section7Icon1 {

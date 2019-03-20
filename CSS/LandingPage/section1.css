@@ -1,5 +1,5 @@
 .LPsection1 {
-  padding: 5% 5%;
+  margin: 5% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -41,8 +41,6 @@
 
 #illustration1 {
   grid-area: illustration1;
-  width: 226px;
-  padding: 5% 0%;
 }
 
 #section1Button1 {
@@ -53,4 +51,29 @@
   grid-area: button2;
   margin: 5% 0%;
   margin-top: 0%;
+}
+
+@media (min-width: 560px) {
+  .Header {
+    padding: 5% 5%;
+  }
+
+  .LPsection1 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "header header"
+      "title title"
+      "illustration1 illustration1"
+      "body body"
+      "button1 button2";
+  }
+
+  #section1Button1 {
+    margin: 10% 5%;
+    margin-bottom: 15%;
+  }
+  #section1Button2 {
+    margin: 10% 5%;
+    margin-bottom: 15%;
+  }
 }
