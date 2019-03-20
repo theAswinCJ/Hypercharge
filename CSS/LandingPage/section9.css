@@ -6,12 +6,24 @@
   grid-template-areas:
     "section9SubTitle"
     "section9Title"
+    "section9BoxGroup";
+  align-items: center;
+  justify-items: center;
+}
+
+#section9BoxGroup {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-area: section9BoxGroup;
+  grid-template-columns: 100%;
+  grid-template-areas:
     "section9Box1"
     "section9Box2"
     "section9Box3"
     "section9Box4";
-  align-items: center;
-  justify-items: center;
 }
 
 .section9Box {
@@ -123,16 +135,23 @@
 
 @media (min-width: 560px) {
   .LPsection9 {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-template-areas:
       "section9SubTitle section9SubTitle"
       "section9Title section9Title"
+      "section9BoxGroup";
+  }
+
+  #section9BoxGroup {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
       "section9Box1 section9Box2"
       "section9Box3 section9Box4";
   }
 
   #section9Box1 {
     align-self: start;
+    justify-self: start;
   }
   .section9Box {
     align-items: start;
@@ -177,5 +196,23 @@
 
   #section9Title {
     padding-bottom: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .section9Box {
+    padding: 0%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #section9BoxGroup {
+    width: 680px;
+    padding-top: 3%;
+  }
+
+  #section9Title {
+    width: 400px;
+    text-align: center;
   }
 }

@@ -100,3 +100,23 @@
     padding: 0% 5%;
   }
 }
+
+@media (min-width: 1024px) {
+  .LPsection7 {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-areas:
+      "section7Title section7Title section7Title"
+      "illustration5 illustration5 illustration5"
+      "section7Icon1 section7Icon2 section7Icon3"
+      "section7FeatureTitle1 section7FeatureTitle2 section7FeatureTitle3"
+      "section7FeatureDesc1 section7FeatureDesc2 section7FeatureDesc3";
+  }
+
+  #illustration5 {
+    width: 50%;
+  }
+
+  .section7Desc {
+    padding: 0% 5%;
+  }
+}

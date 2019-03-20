@@ -99,3 +99,60 @@
     padding: 0% 5%;
   }
 }
+
+@media (min-width: 1024px) {
+  .LPsection6 {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+      "section6SubTitle section6SubTitle section6SubTitle "
+      "section6Title topDeveloperBadge editorsChoiceBadge"
+      "section6Title topDeveloperTitle editorsChoiceTitle"
+      "section6Desc topDeveloperDesc editorsChoiceDesc";
+  }
+
+  #section6SubTitle {
+    text-align: left;
+    align-self: end;
+    justify-self: start;
+  }
+
+  #section6Title {
+    text-align: left;
+    align-self: start;
+    justify-self: end;
+    margin: 0px;
+  }
+
+  #section6Desc {
+    text-align: left;
+    align-self: start;
+    justify-self: end;
+    margin: 0px;
+  }
+
+  #topDeveloperBadge {
+    justify-self: start;
+  }
+
+  #topDeveloperTitle {
+    justify-self: start;
+    padding-left: 5%;
+  }
+
+  #topDeveloperDesc {
+    text-align: left;
+  }
+
+  #editorsChoiceBadge {
+    justify-self: start;
+  }
+
+  #editorsChoiceTitle {
+    justify-self: start;
+    padding-left: 5%;
+  }
+
+  #editorsChoiceDesc {
+    text-align: left;
+  }
+}

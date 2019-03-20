@@ -12,6 +12,7 @@
   grid-area: header;
   width: 100%;
   padding: 10% 5%;
+
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "logo hamburger";
@@ -90,6 +91,7 @@
 @media (min-width: 768px) {
   .Header {
     padding: 0%;
+    padding-bottom: 5%;
   }
 
   #HeaderHamburger {
@@ -151,10 +153,12 @@
 
   #section1Button1 {
     margin: 5% 0%;
+    margin-top: 10%;
     justify-self: start;
   }
   #section1Button2 {
     margin: 5% 0%;
+    margin-top: 10%;
     justify-self: start;
   }
 }

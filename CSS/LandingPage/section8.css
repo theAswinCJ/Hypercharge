@@ -174,3 +174,26 @@
     padding-right: 5%;
   }
 }
+
+@media (min-width: 1024px) {
+  #Section8PrefixSubSection {
+    align-self: center;
+    justify-self: center;
+  }
+
+  #section8Title {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .LPsection8 {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-areas:
+      "Section8PrefixSubSection section8Icon1 section8Icon2"
+      "Section8PrefixSubSection section8FeatureTitle1 section8FeatureTitle2"
+      "Section8PrefixSubSection section8FeatureDesc1 section8FeatureDesc2"
+      "section8Icon3 section8Icon4 section8Icon5"
+      "section8FeatureTitle3 section8FeatureTitle4 section8FeatureTitle5"
+      "section8FeatureDesc3 section8FeatureDesc4 section8FeatureDesc5";
+  }
+}
