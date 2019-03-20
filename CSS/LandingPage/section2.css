@@ -39,3 +39,12 @@
 #section2Body {
   grid-area: section2Body;
 }
+
+@media (min-width: 768px) {
+  .LPsection2 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "Section2PrefixSubSection illustration2"
+      "section2Body illustration2";
+  }
+}

@@ -22,3 +22,12 @@
 #section4Body {
   grid-area: section4Body;
 }
+
+@media (min-width: 768px) {
+  .LPsection4 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section4Title illustration4"
+      "section4Body illustration4";
+  }
+}

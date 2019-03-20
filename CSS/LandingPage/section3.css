@@ -39,3 +39,12 @@
 #section3Body {
   grid-area: section3Body;
 }
+
+@media (min-width: 768px) {
+  .LPsection3 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "illustration3 Section3PrefixSubSection "
+      "illustration3 section3Body ";
+  }
+}

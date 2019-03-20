@@ -75,4 +75,28 @@
 .section7Desc {
   margin-top: 0px;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .LPsection7 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section7Title section7Title"
+      "illustration5 illustration5"
+      "section7Icon1 section7Icon2"
+      "section7FeatureTitle1 section7FeatureTitle2"
+      "section7FeatureDesc1 section7FeatureDesc2"
+      "section7Icon3 section7Icon3"
+      "section7FeatureTitle3 section7FeatureTitle3"
+      "section7FeatureDesc3 section7FeatureDesc3";
+  }
+
+  #illustration5 {
+    width: 60%;
+  }
+
+  .section7Desc {
+    padding: 0% 5%;
+  }
 }

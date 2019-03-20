@@ -6,16 +6,47 @@
   grid-template-areas:
     "section9SubTitle"
     "section9Title"
-    "section9Icon1"
-    "section9Desc1"
-    "section9Icon2"
-    "section9Desc2"
-    "section9Icon3"
-    "section9Desc3"
-    "section9Icon4"
-    "section9Desc4";
+    "section9Box1"
+    "section9Box2"
+    "section9Box3"
+    "section9Box4";
   align-items: center;
   justify-items: center;
+}
+
+.section9Box {
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#section9Box1 {
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section9Icon1"
+    "section9Desc1";
+}
+
+#section9Box2 {
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section9Icon2"
+    "section9Desc2";
+}
+
+#section9Box3 {
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section9Icon3"
+    "section9Desc3";
+}
+
+#section9Box4 {
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "section9Icon4"
+    "section9Desc4";
 }
 
 #section9Title {
@@ -28,6 +59,22 @@
   grid-area: section9SubTitle;
 }
 
+#section9Box1 {
+  grid-area: section9Box1;
+}
+
+#section9Box2 {
+  grid-area: section9Box2;
+}
+
+#section9Box3 {
+  grid-area: section9Box3;
+}
+
+#section9Box4 {
+  grid-area: section9Box4;
+}
+
 #section9Icon1 {
   grid-area: section9Icon1;
 }
@@ -38,6 +85,8 @@
 
 #section9Icon2 {
   grid-area: section9Icon2;
+  justify-self: center;
+  align-self: center;
 }
 
 #section9Desc2 {
@@ -61,14 +110,15 @@
 }
 
 .section9Icon {
-  margin-top: 13%;
+  margin-top: 10%;
   margin-bottom: 2%;
 }
 
 .section9Desc {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
+  font-size: 14px;
 }
 
 @media (min-width: 560px) {
@@ -77,19 +127,55 @@
     grid-template-areas:
       "section9SubTitle section9SubTitle"
       "section9Title section9Title"
-      "section9Icon1 section9Icon2"
-      "section9Desc1 section9Desc2"
-      "section9Icon3 section9Icon4"
-      "section9Desc3 section9Desc4";
+      "section9Box1 section9Box2"
+      "section9Box3 section9Box4";
+  }
+
+  #section9Box1 {
+    align-self: start;
+  }
+  .section9Box {
+    align-items: start;
+    padding: 5%;
   }
 
   .section9Desc {
-    padding: 5%;
+    padding: 0%;
+    margin: 5%;
     align-self: start;
   }
 
   .section9Icon {
-    margin-top: 5%;
-    margin-bottom: 2%;
+    align-self: start;
+    padding: 0%;
+    margin: 5%;
+  }
+
+  #section9Title {
+    padding-bottom: 5%;
+  }
+
+  .section9Desc {
+    text-align: left;
+  }
+
+  #section9Icon1 {
+    justify-self: start;
+  }
+
+  #section9Icon2 {
+    justify-self: start;
+  }
+
+  #section9Icon3 {
+    justify-self: start;
+  }
+
+  #section9Icon4 {
+    justify-self: start;
+  }
+
+  #section9Title {
+    padding-bottom: 0%;
   }
 }

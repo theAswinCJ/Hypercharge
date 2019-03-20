@@ -44,6 +44,7 @@
 
 #topDeveloperDesc {
   grid-area: topDeveloperDesc;
+  text-align: center;
 }
 
 #editorsChoiceBadge {
@@ -58,4 +59,43 @@
 
 #editorsChoiceDesc {
   grid-area: editorsChoiceDesc;
+
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .LPsection6 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section6SubTitle section6SubTitle"
+      "section6Title section6Title"
+      "section6Desc section6Desc"
+      "topDeveloperBadge editorsChoiceBadge"
+      "topDeveloperTitle editorsChoiceTitle"
+      "topDeveloperDesc editorsChoiceDesc";
+  }
+
+  #section6Title {
+    margin: 5px;
+  }
+
+  #section6Desc {
+    margin: 10px;
+  }
+
+  #topDeveloperTitle {
+    margin: 0px;
+  }
+
+  #editorsChoiceTitle {
+    margin: 0px;
+  }
+
+  #editorsChoiceDesc {
+    padding: 0% 5%;
+  }
+
+  #topDeveloperDesc {
+    padding: 0% 5%;
+  }
 }

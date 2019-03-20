@@ -15,6 +15,15 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "logo hamburger";
+  align-items: center;
+}
+
+.headerLinks {
+  display: none;
+}
+
+#section1ContactButton {
+  display: none;
 }
 
 #section1Title {
@@ -75,5 +84,77 @@
   #section1Button2 {
     margin: 10% 5%;
     margin-bottom: 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  .Header {
+    padding: 0%;
+  }
+
+  #HeaderHamburger {
+    display: none;
+  }
+
+  .headerLinks {
+    display: grid;
+    font-size: 14px;
+  }
+
+  #section1ContactButton {
+    display: grid;
+    height: 42px;
+    grid-area: section1ContactButton;
+    justify-self: end;
+    width: 130px;
+  }
+
+  #headerLink1 {
+    grid-area: headerLink1;
+  }
+
+  #headerLink2 {
+    grid-area: headerLink2;
+  }
+
+  #headerLink3 {
+    grid-area: headerLink3;
+  }
+
+  #headerLink4 {
+    grid-area: headerLink4;
+  }
+
+  .Header {
+    grid-template-columns: 18% 14% 14% 14% 20% 20%;
+    grid-template-areas: "logo headerLink1 headerLink2 headerLink3 headerLink4 section1ContactButton";
+  }
+
+  #HeaderLogo {
+    width: 120px;
+    padding-left: 0%;
+  }
+
+  #HeaderHamburger {
+    width: 22px;
+    padding-right: 0%;
+  }
+
+  .LPsection1 {
+    grid-template-columns: 25% 33% 42%;
+    grid-template-areas:
+      "header header header"
+      "title title illustration1"
+      "body body illustration1"
+      "button1 button2 illustration1";
+  }
+
+  #section1Button1 {
+    margin: 5% 0%;
+    justify-self: start;
+  }
+  #section1Button2 {
+    margin: 5% 0%;
+    justify-self: start;
   }
 }

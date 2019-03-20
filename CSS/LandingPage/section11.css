@@ -103,3 +103,66 @@
     padding: 3%;
   }
 }
+
+@media (min-width: 560px) {
+  .LPsection11 {
+    margin-bottom: 0%;
+    padding-top: 0%;
+
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section11Logo section11Logo"
+      "footerLink1 footerLink2"
+      "footerLink3 footerLink4"
+      "footerLink5 footerLink5"
+      "footerSubSectionBG footerSubSectionBG";
+  }
+
+  #section11Logo {
+    grid-area: section11Logo;
+    padding: 5%;
+  }
+
+  .footerLinks {
+    padding: 2%;
+  }
+
+  .footerSubSectionBG {
+    margin-top: 3%;
+    padding: 3%;
+  }
+}
+
+@media (min-width: 768px) {
+  .LPsection11 {
+    margin-bottom: 0%;
+    padding-top: 0%;
+    grid-template-columns: 31% 23% 23% 23%;
+    grid-template-areas:
+      "section11Logo  footerLink1 footerLink4 footerLink4"
+      "section11Logo footerLink2 footerLink5 footerLink5"
+      "section11Logo footerLink3 footerLink3 footerLink3"
+      "footerSubSectionBG footerSubSectionBG footerSubSectionBG footerSubSectionBG";
+    align-items: start;
+    text-align: left;
+    justify-items: start;
+  }
+
+  #section11Logo {
+    padding: 10%;
+    justify-self: center;
+    align-self: start;
+    padding-top: 0px;
+  }
+
+  .footerLinks {
+    padding: 30px;
+    text-align: left;
+    padding-top: 0px;
+  }
+
+  .footerSubSectionBG {
+    padding-left: 5%;
+    margin-top: 0%;
+  }
+}
