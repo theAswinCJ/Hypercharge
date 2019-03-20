@@ -1,5 +1,5 @@
 .LPsection11 {
-  padding: 10% 5%;
+  padding: 10% 0%;
   padding-bottom: 0%;
   overflow: hidden;
   display: grid;
@@ -11,7 +11,7 @@
     "footerLink3"
     "footerLink4"
     "footerLink5"
-    "footerCopyright";
+    "footerSubSectionBG";
   align-items: center;
   justify-items: center;
 }
@@ -53,6 +53,7 @@
 }
 
 .footerSubSectionBG {
+  grid-area: footerSubSectionBG;
   background-color: #f8fafd;
 }
 
@@ -77,5 +78,28 @@
 @media (min-width: 560px) {
   .LPsection11 {
     margin-bottom: 0%;
+    padding-top: 0%;
+
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+      "section11Logo section11Logo"
+      "footerLink1 footerLink2"
+      "footerLink3 footerLink4"
+      "footerLink5 footerLink5"
+      "footerSubSectionBG footerSubSectionBG";
+  }
+
+  #section11Logo {
+    grid-area: section11Logo;
+    padding: 5%;
+  }
+
+  .footerLinks {
+    padding: 2%;
+  }
+
+  .footerSubSectionBG {
+    margin-top: 3%;
+    padding: 3%;
   }
 }
