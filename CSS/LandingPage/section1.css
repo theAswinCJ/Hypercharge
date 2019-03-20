@@ -1,4 +1,5 @@
 .LPsection1 {
+  padding: 5% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
