@@ -42,15 +42,10 @@
 
 @media (min-width: 768px) {
   .LPsection2 {
+    justify-items: left;
     grid-template-columns: 50% 50%;
     grid-template-areas:
       "illustration2 Section2PrefixSubSection "
       "illustration2 section2Body";
-  }
-}
-
-@media (min-width: 1440px) {
-  .LPsection2 {
-    margin: 7% 10%;
   }
 }

@@ -72,9 +72,3 @@
       "section5StatDesc1 section5StatDesc2 section5StatDesc3";
   }
 }
-
-@media (min-width: 1440px) {
-  .LPsection5 {
-    margin: 7% 10%;
-  }
-}

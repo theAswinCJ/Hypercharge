@@ -25,15 +25,32 @@
 
 @media (min-width: 768px) {
   .LPsection4 {
+    justify-items: left;
     grid-template-columns: 50% 50%;
     grid-template-areas:
       "illustration4 section4Title "
+      "illustration4 section4Body "
       "illustration4 section4Body ";
+  }
+
+  #section4Title {
+    margin: 0px;
+    margin-top: 4%;
+  }
+  #section4Body {
+    justify-self: start;
+    align-self: start;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
+  #section4Title {
+    margin: 0px;
+  }
   .LPsection4 {
-    margin: 7% 10%;
+    grid-template-areas:
+      "illustration4 section4Title "
+      "illustration4 section4Body "
+      "illustration4 section4Body ";
   }
 }

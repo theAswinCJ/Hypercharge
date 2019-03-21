@@ -216,9 +216,3 @@
     text-align: center;
   }
 }
-
-@media (min-width: 1440px) {
-  .LPsection9 {
-    margin: 7% 10%;
-  }
-}

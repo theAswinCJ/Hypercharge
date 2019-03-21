@@ -42,15 +42,10 @@
 
 @media (min-width: 768px) {
   .LPsection3 {
+    justify-items: left;
     grid-template-columns: 50% 50%;
     grid-template-areas:
       " Section3PrefixSubSection illustration3 "
       " section3Body illustration3";
-  }
-}
-
-@media (min-width: 1440px) {
-  .LPsection3 {
-    margin: 7% 10%;
   }
 }
