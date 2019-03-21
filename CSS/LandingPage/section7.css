@@ -1,5 +1,5 @@
 .LPsection7 {
-  margin: 10% 5%;
+  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -21,6 +21,7 @@
 
 #section7Title {
   grid-area: section7Title;
+  margin: 0% 0%;
 }
 
 #illustration5 {
@@ -118,5 +119,11 @@
 
   .section7Desc {
     padding: 0% 5%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .LPsection7 {
+    margin: 7% 10%;
   }
 }

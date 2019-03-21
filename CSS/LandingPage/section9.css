@@ -1,5 +1,5 @@
 .LPsection9 {
-  margin: 10% 5%;
+  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -214,5 +214,11 @@
   #section9Title {
     width: 400px;
     text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .LPsection9 {
+    margin: 7% 10%;
   }
 }

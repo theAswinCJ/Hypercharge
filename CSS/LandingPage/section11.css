@@ -66,7 +66,6 @@
   text-align: center;
   line-height: 21px;
   padding: 5%;
-  width: 100%;
 }
 
 .footerSubSectionBG {
@@ -164,5 +163,15 @@
   .footerSubSectionBG {
     padding: 1.5%;
     padding-left: 5%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #section11Logo {
+    padding-left: 10%;
+  }
+
+  .footerSubSectionBG {
+    padding-left: 10%;
   }
 }

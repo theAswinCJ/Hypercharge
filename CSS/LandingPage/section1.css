@@ -1,5 +1,5 @@
 .LPsection1 {
-  margin: 5% 5%;
+  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -160,5 +160,50 @@
     margin: 5% 0%;
     margin-top: 10%;
     justify-self: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .LPsection1 {
+    grid-template-columns: 18% 40% 42%;
+  }
+
+  .Header {
+    padding-bottom: 3%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .LPsection1 {
+    margin: 7% 10%;
+    grid-template-columns: 17% 41% 42%;
+  }
+
+  #section1Title {
+    justify-self: start;
+  }
+
+  #section1Body {
+    justify-self: start;
+    width: 80%;
+  }
+
+  #HeaderLogo {
+    width: 150px;
+  }
+
+  .Header {
+    grid-template-columns: 26% 12% 12% 12% 12% 26%;
+    grid-template-areas: "logo headerLink1 headerLink2 headerLink3 headerLink4 section1ContactButton";
+  }
+
+  .headerLinks {
+    display: grid;
+    font-size: 16px;
+    justify-self: start;
+  }
+
+  #section1ContactButton {
+    width: 150px;
   }
 }

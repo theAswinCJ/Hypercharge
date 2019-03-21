@@ -1,5 +1,5 @@
 .LPsection3 {
-  margin: 10% 5%;
+  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -44,7 +44,13 @@
   .LPsection3 {
     grid-template-columns: 50% 50%;
     grid-template-areas:
-      "illustration3 Section3PrefixSubSection "
-      "illustration3 section3Body ";
+      " Section3PrefixSubSection illustration3 "
+      " section3Body illustration3";
+  }
+}
+
+@media (min-width: 1440px) {
+  .LPsection3 {
+    margin: 7% 10%;
   }
 }

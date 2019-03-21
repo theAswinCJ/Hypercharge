@@ -1,5 +1,5 @@
 .LPsection6 {
-  margin: 10% 5%;
+  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -100,8 +100,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .LPsection6 {
+    margin: 7% 10%;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
       "section6SubTitle section6SubTitle section6SubTitle "
@@ -119,15 +120,18 @@
   #section6Title {
     text-align: left;
     align-self: start;
-    justify-self: end;
     margin: 0px;
+    padding-top: 3%;
+    justify-self: start;
+    width: 90%;
   }
 
   #section6Desc {
+    justify-self: start;
     text-align: left;
-    align-self: start;
-    justify-self: end;
+    align-self: end;
     margin: 0px;
+    width: 80%;
   }
 
   #topDeveloperBadge {

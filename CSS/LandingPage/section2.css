@@ -1,5 +1,5 @@
 .LPsection2 {
-  margin: 10% 5%;
+  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -44,7 +44,13 @@
   .LPsection2 {
     grid-template-columns: 50% 50%;
     grid-template-areas:
-      "Section2PrefixSubSection illustration2"
-      "section2Body illustration2";
+      "illustration2 Section2PrefixSubSection "
+      "illustration2 section2Body";
+  }
+}
+
+@media (min-width: 1440px) {
+  .LPsection2 {
+    margin: 7% 10%;
   }
 }

@@ -1,5 +1,5 @@
 .LPsection4 {
-  margin: 10% 5%;
+  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -27,7 +27,13 @@
   .LPsection4 {
     grid-template-columns: 50% 50%;
     grid-template-areas:
-      "section4Title illustration4"
-      "section4Body illustration4";
+      "illustration4 section4Title "
+      "illustration4 section4Body ";
+  }
+}
+
+@media (min-width: 1440px) {
+  .LPsection4 {
+    margin: 7% 10%;
   }
 }
