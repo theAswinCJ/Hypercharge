@@ -1,10 +1,10 @@
 .LPsection8 {
-  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas:
     "Section8PrefixSubSection"
+    "section8Title"
     "section8Icon1"
     "section8FeatureTitle1"
     "section8FeatureDesc1"
@@ -26,9 +26,7 @@
 
 #Section8PrefixSubSection {
   grid-area: Section8PrefixSubSection;
-  grid-template-areas:
-    "section8Line section8Prefix"
-    "section8Title section8Title";
+  align-self: end;
 }
 
 #section8Line {
@@ -44,6 +42,7 @@
   grid-area: section8Title;
   padding-left: 0%;
   padding-bottom: 10%;
+  align-self: start;
 }
 
 #section8Icon1 {
@@ -120,35 +119,13 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: 350px) {
-  #Section8PrefixSubSection {
-    grid-template-columns: 23% 77%;
-  }
-}
-
-@media (min-width: 400px) {
-  #Section8PrefixSubSection {
-    grid-template-columns: 29% 71%;
-  }
-}
-
-@media (min-width: 500px) {
-  #Section8PrefixSubSection {
-    grid-template-columns: 32% 68%;
-  }
-}
-
 @media (min-width: 560px) {
-  #Section8PrefixSubSection {
-    grid-template-columns: 20% 80%;
-  }
-
   .LPsection8 {
     grid-template-columns: 50% 50%;
     grid-template-areas:
       "Section8PrefixSubSection section8Icon1"
-      "Section8PrefixSubSection section8FeatureTitle1"
-      "Section8PrefixSubSection section8FeatureDesc1"
+      "section8Title section8FeatureTitle1"
+      "section8Title section8FeatureDesc1"
       "section8Icon2 section8Icon3"
       "section8FeatureTitle2 section8FeatureTitle3"
       "section8FeatureDesc2 section8FeatureDesc3"
@@ -176,11 +153,6 @@
 }
 
 @media (min-width: 1024px) {
-  #Section8PrefixSubSection {
-    align-self: center;
-    justify-self: center;
-  }
-
   #section8Title {
     margin: 0px;
     padding: 0px;
@@ -190,8 +162,8 @@
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-areas:
       "Section8PrefixSubSection section8Icon1 section8Icon2"
-      "Section8PrefixSubSection section8FeatureTitle1 section8FeatureTitle2"
-      "Section8PrefixSubSection section8FeatureDesc1 section8FeatureDesc2"
+      "section8Title section8FeatureTitle1 section8FeatureTitle2"
+      "section8Title section8FeatureDesc1 section8FeatureDesc2"
       "section8Icon3 section8Icon4 section8Icon5"
       "section8FeatureTitle3 section8FeatureTitle4 section8FeatureTitle5"
       "section8FeatureDesc3 section8FeatureDesc4 section8FeatureDesc5";

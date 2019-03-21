@@ -1,5 +1,4 @@
 .LPsection6 {
-  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -24,6 +23,7 @@
 #section6Title {
   margin-top: 5px;
   grid-area: section6Title;
+  text-align: center;
 }
 
 #section6Desc {
@@ -34,32 +34,39 @@
 
 #topDeveloperBadge {
   padding: 10% 0%;
+  padding-bottom: 2%;
   grid-area: topDeveloperBadge;
 }
 
 #topDeveloperTitle {
   grid-area: topDeveloperTitle;
   margin-bottom: 0px;
+  display: none;
 }
 
 #topDeveloperDesc {
   grid-area: topDeveloperDesc;
   text-align: center;
+  width: 80%;
 }
 
 #editorsChoiceBadge {
   padding: 10% 0%;
+  padding-bottom: 2%;
   grid-area: editorsChoiceBadge;
 }
 
 #editorsChoiceTitle {
   grid-area: editorsChoiceTitle;
   margin-bottom: 0px;
+
+  display: none;
 }
 
 #editorsChoiceDesc {
   grid-area: editorsChoiceDesc;
 
+  width: 80%;
   text-align: center;
 }
 
@@ -77,10 +84,12 @@
 
   #section6Title {
     margin: 5px;
+    width: 80%;
   }
 
   #section6Desc {
     margin: 10px;
+    width: 70%;
   }
 
   #topDeveloperTitle {
@@ -100,7 +109,8 @@
   }
 }
 
-@media (min-width: 1440px) {
+/*
+@media (min-width: 1640px) {
   .LPsection6 {
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
@@ -159,3 +169,5 @@
     text-align: left;
   }
 }
+
+*/

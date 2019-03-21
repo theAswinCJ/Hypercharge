@@ -1,5 +1,4 @@
 .LPsection5 {
-  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -14,6 +13,10 @@
     "section5StatDesc3";
   align-items: center;
   justify-items: center;
+}
+
+.statisticBody {
+  display: none;
 }
 
 #section5SubTitle {
@@ -62,7 +65,18 @@
   }
 }
 
-@media (min-width: 560px) {
+@media (min-width: 768px) {
+  .statisticBody {
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .statisticDesc {
+    margin-top: 10%;
+  }
+
   .LPsection5 {
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:

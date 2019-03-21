@@ -4,11 +4,19 @@
   background-size: cover;
 }
 
+.even {
+  /*
+  background-color: rgba(248, 253, 255, 0.8); */
+  background-color: rgba(245, 245, 250, 0.48);
+  padding: 0.01% 0%;
+}
+
 .PrefixSubSection {
   width: 100%;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 20% 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .titlePrefixLine {
@@ -19,8 +27,12 @@
   border-radius: 10px;
   margin: 0px;
   padding: 0px;
-  margin-right: 20%;
+  margin-right: 5%;
   height: 0px;
+}
+
+.logo {
+  width: 120px;
 }
 
 .prefixMargins {
@@ -90,5 +102,24 @@
 
   .illustrationMedium {
     width: 100%;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .PrefixSubSection {
+    align-items: center;
+    justify-content: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    width: 190px;
+  }
+
+  .titleMargins {
+    padding-top: 2%;
   }
 }

@@ -15,6 +15,10 @@
   justify-items: center;
 }
 
+#LPsection11Background {
+  margin-top: 5%;
+}
+
 #section11Logo {
   grid-area: section11Logo;
   padding: 5%;
@@ -117,13 +121,13 @@
 
   #section11Logo {
     justify-self: center;
-    align-self: start;
+    align-self: center;
+    width: 190px;
   }
 
   .footerLinks {
     padding: 30px;
     text-align: left;
-    padding-top: 0px;
     width: 120px;
   }
 

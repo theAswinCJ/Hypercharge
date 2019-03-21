@@ -1,5 +1,4 @@
 .LPsection1 {
-  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
@@ -38,7 +37,6 @@
 #HeaderLogo {
   grid-area: logo;
   align-self: left;
-  width: 120px;
   padding-left: 15%;
 }
 
@@ -55,13 +53,15 @@
 
 #section1Button1 {
   grid-area: button1;
-  margin: 5% 0%;
 }
 #section1Button2 {
   grid-area: button2;
-  margin: 5% 0%;
-  margin-top: 0%;
 }
+
+.buttonMargins {
+  margin-top: 5%;
+}
+
 @media (min-width: 400px) {
   .Header {
     padding: 5% 5%;
@@ -79,13 +79,9 @@
       "button1 button2";
   }
 
-  #section1Button1 {
-    margin: 10% 5%;
-    margin-bottom: 15%;
-  }
-  #section1Button2 {
-    margin: 10% 5%;
-    margin-bottom: 15%;
+  .buttonMargins {
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 }
 
@@ -102,6 +98,11 @@
   .headerLinks {
     display: grid;
     font-size: 14px;
+  }
+
+  .buttonMargins {
+    margin-top: 17px;
+    margin-bottom: 0%;
   }
 
   #section1ContactButton {
@@ -134,7 +135,6 @@
   }
 
   #HeaderLogo {
-    width: 120px;
     padding-left: 0%;
   }
 
@@ -153,13 +153,9 @@
   }
 
   #section1Button1 {
-    margin: 5% 0%;
-    margin-top: 10%;
     justify-self: start;
   }
   #section1Button2 {
-    margin: 5% 0%;
-    margin-top: 10%;
     justify-self: start;
   }
 }
@@ -171,6 +167,10 @@
 
   .Header {
     padding-bottom: 3%;
+  }
+
+  .buttonMargins {
+    margin-top: 40px;
   }
 }
 
@@ -186,10 +186,6 @@
   #section1Body {
     justify-self: start;
     width: 80%;
-  }
-
-  #HeaderLogo {
-    width: 190px;
   }
 
   .Header {

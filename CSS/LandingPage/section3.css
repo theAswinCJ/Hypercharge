@@ -1,10 +1,10 @@
 .LPsection3 {
-  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas:
     "Section3PrefixSubSection"
+    "section3Title"
     "illustration3"
     "section3Body";
   align-items: center;
@@ -13,9 +13,6 @@
 
 #Section3PrefixSubSection {
   grid-area: Section3PrefixSubSection;
-  grid-template-areas:
-    "section3Line section3Prefix"
-    "section3Title section3Title";
 }
 
 #section3Line {
@@ -24,7 +21,6 @@
 }
 
 #section3Prefix {
-  width: 100%;
   grid-area: section3Prefix;
 }
 
@@ -34,6 +30,7 @@
 
 #illustration3 {
   grid-area: illustration3;
+  width: 85%;
 }
 
 #section3Body {
@@ -46,6 +43,7 @@
     grid-template-columns: 50% 50%;
     grid-template-areas:
       " Section3PrefixSubSection illustration3 "
+      " section3Title illustration3"
       " section3Body illustration3";
   }
 }

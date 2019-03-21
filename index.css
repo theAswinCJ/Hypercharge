@@ -147,9 +147,9 @@ a:active {
   }
 
   button {
-    font-size: 14.78px;
+    font-size: 12px;
     width: 150px;
-    height: 45px;
+    height: 40px;
   }
 }
 
@@ -172,6 +172,12 @@ a:active {
 
   h4 {
     font-size: 18px;
+  }
+
+  button {
+    font-size: 14.78px;
+    width: 150px;
+    height: 45px;
   }
 }
 

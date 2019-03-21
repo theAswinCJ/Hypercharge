@@ -1,14 +1,27 @@
 .LPsection4 {
-  margin: 7% 5%;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas:
+    "Section4PrefixSubSection"
     "section4Title"
     "illustration4"
     "section4Body";
   align-items: center;
   justify-items: center;
+}
+
+#Section4PrefixSubSection {
+  grid-area: Section4PrefixSubSection;
+}
+
+#section4Line {
+  justify-self: end;
+  grid-area: section4Line;
+}
+
+#section4Prefix {
+  grid-area: section4Prefix;
 }
 
 #section4Title {
@@ -17,6 +30,7 @@
 
 #illustration4 {
   grid-area: illustration4;
+  width: 85%;
 }
 
 #section4Body {
@@ -28,29 +42,8 @@
     justify-items: left;
     grid-template-columns: 50% 50%;
     grid-template-areas:
-      "illustration4 section4Title "
-      "illustration4 section4Body "
-      "illustration4 section4Body ";
-  }
-
-  #section4Title {
-    margin: 0px;
-    margin-top: 4%;
-  }
-  #section4Body {
-    justify-self: start;
-    align-self: start;
-  }
-}
-
-@media (min-width: 1024px) {
-  #section4Title {
-    margin: 0px;
-  }
-  .LPsection4 {
-    grid-template-areas:
-      "illustration4 section4Title "
-      "illustration4 section4Body "
+      "illustration4 Section4PrefixSubSection  "
+      "illustration4 section4Title"
       "illustration4 section4Body ";
   }
 }
