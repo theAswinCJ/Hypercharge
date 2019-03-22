@@ -30,6 +30,11 @@
   display: grid;
   align-items: center;
   justify-items: center;
+  padding: 30%;
+}
+
+.section9Box:hover {
+  box-shadow: 5px 11px 35px #e7e7e7;
 }
 
 #section9Box1 {
@@ -123,6 +128,7 @@
 .section9Icon {
   margin-top: 10%;
   margin-bottom: 2%;
+  width: 32px;
 }
 
 .section9Desc {

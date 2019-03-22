@@ -85,7 +85,8 @@
 }
 
 .section10Icon {
-  padding: 15% 10%;
+  padding: 25% 10%;
+  width: 32px;
 }
 
 @media (min-width: 560px) {
@@ -113,10 +114,6 @@
 
   #illustration6 {
     padding: 0%;
-  }
-
-  #section10Icon3 {
-    justify-self: end;
   }
 }
 
@@ -153,10 +150,18 @@
   #illustration6 {
     width: 80%;
   }
+
+  .section10Icon {
+    padding: 20% 10%;
+  }
 }
 @media (min-width: 1024px) {
   #illustration6 {
     width: 70%;
+  }
+
+  .section10Icon {
+    padding: 15% 10%;
   }
 }
 
