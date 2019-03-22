@@ -35,6 +35,7 @@
 #topDeveloperBadge {
   padding: 10% 0%;
   padding-bottom: 2%;
+  mix-blend-mode: multiply;
   grid-area: topDeveloperBadge;
 }
 
@@ -53,6 +54,7 @@
 #editorsChoiceBadge {
   padding: 10% 0%;
   padding-bottom: 2%;
+  mix-blend-mode: multiply;
   grid-area: editorsChoiceBadge;
 }
 

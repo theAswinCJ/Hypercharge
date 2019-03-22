@@ -97,7 +97,7 @@
 
   .headerLinks {
     display: grid;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .buttonMargins {
@@ -129,9 +129,13 @@
     grid-area: headerLink4;
   }
 
+  #headerLink5 {
+    grid-area: headerLink5;
+  }
+
   .Header {
-    grid-template-columns: 18% 14% 14% 14% 20% 20%;
-    grid-template-areas: "logo headerLink1 headerLink2 headerLink3 headerLink4 section1ContactButton";
+    grid-template-columns: 20% 12% 12% 12% 16% 8% 20%;
+    grid-template-areas: "logo headerLink1 headerLink2 headerLink3 headerLink4 headerLink5 section1ContactButton";
   }
 
   #HeaderLogo {
@@ -189,17 +193,21 @@
   }
 
   .Header {
-    grid-template-columns: 26% 12% 12% 12% 12% 26%;
-    grid-template-areas: "logo headerLink1 headerLink2 headerLink3 headerLink4 section1ContactButton";
+    grid-template-columns: 20% 12% 12% 12% 14% 10% 20%;
+    grid-template-areas: "logo headerLink1 headerLink2 headerLink3 headerLink4 headerLink5 section1ContactButton";
   }
 
   .headerLinks {
     display: grid;
     font-size: 16px;
-    justify-self: start;
+    justify-self: end;
   }
 
-  #section1ContactButton {
+  #headerLink5 {
+    justify-self: center;
+  }
+
+  #header #section1ContactButton {
     width: 150px;
   }
 }

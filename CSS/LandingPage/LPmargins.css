@@ -1,5 +1,6 @@
 .LPsection1 {
   margin: 7% 5%;
+  margin-top: 4%;
 }
 
 .LPsection2 {
@@ -65,6 +66,7 @@
 @media (min-width: 1124px) {
   .LPsection1 {
     margin: 7% 10%;
+    margin-top: 4%;
   }
 
   .LPsection2 {
@@ -116,6 +118,7 @@
 @media (min-width: 1340px) {
   .LPsection1 {
     margin: 7% 15%;
+    margin-top: 4%;
   }
 
   .LPsection2 {
@@ -230,7 +233,7 @@
 @media (min-width: 1640px) {
   .LPsection1 {
     margin: 7% 15%;
-    margin-top: 7%;
+    margin-top: 5%;
   }
 
   .LPsection2 {
