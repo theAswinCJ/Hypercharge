@@ -1,0 +1,60 @@
+#section1Button1 {
+  display: none;
+}
+
+#illustration7 {
+  width: 70%;
+  align-self: center;
+}
+
+#section1Button2 {
+  display: none;
+}
+.faq {
+  margin: 16px 0;
+  padding: 16px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.FAQquestion h4 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.FAQanswer p {
+  text-align: justify;
+}
+
+.FAQsection2 {
+  margin: 7% 5%;
+}
+
+@media (min-width: 560px) {
+  .FAQquestion h4 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1124px) {
+  .FAQsection2 {
+    margin: 7% 10%;
+  }
+}
+
+@media (min-width: 1340px) {
+  .FAQsection2 {
+    margin: 7% 15%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .FAQsection2 {
+    margin: 7% 10%;
+  }
+}
+
+@media (min-width: 1640px) {
+  .FAQsection2 {
+    margin: 7% 15%;
+  }
+}

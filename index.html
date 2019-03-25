@@ -20,96 +20,19 @@
     <!--<link rel="shortcut icon" href="Assets/Favicon/favicon.ico"> -->
     <title>HyperCharge by Riafy</title>
 
-    <!-- Google Fonts Link
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Roboto:300,500"
-      rel="stylesheet"
-    />
-
-    
-    -->
-
-    <link rel="stylesheet" type="text/css" href="all.css" />
-
-    <!--Separate CSS Files
     <link rel="stylesheet" type="text/css" href="index.css" />
-
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/landingpage.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section1.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section2.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section3.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section4.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section5.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section6.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section7.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section8.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section9.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section10.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/section11.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./CSS/LandingPage/LPmargins.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./Assets/fonts/fontStylesheet.css"
-    />
-
-    -->
+    <script>
+      function showHideBurger() {
+        var headerLinks = document.getElementsByClassName("headerLinks");
+        for (link of headerLinks) {
+          if (link.style.display.toString() == "grid") {
+            link.style.display = "none";
+          } else {
+            link.style.display = "grid";
+          }
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -129,6 +52,7 @@
               id="HeaderHamburger"
               src="Assets/hamburger.png"
               alt="Hamburger menu"
+              onclick="showHideBurger()"
             />
 
             <a class="headerLinks" id="headerLink1" href="#services"
@@ -141,13 +65,13 @@
             <a class="headerLinks" id="headerLink4" href="#why"
               >Why HyperCharge</a
             >
-            <a class="headerLinks" id="headerLink5" href="#">FAQ</a>
+            <a class="headerLinks" id="headerLink5" href="./faq.html">FAQ</a>
 
             <button
               class="buttonOutline"
               id="section1ContactButton"
               type="button"
-              onclick="window.location.href ='www.google.com';"
+              onclick="window.location.href ='#contactus';"
             >
               Contact Us
             </button>
@@ -173,7 +97,7 @@
             class="buttonMargins"
             id="section1Button1"
             type="button"
-            onclick="window.location.href ='www.google.com';"
+            onclick="window.location.href ='#contactus';"
           >
             Enquire Now
           </button>
@@ -181,7 +105,7 @@
             class="buttonOutline buttonMargins"
             id="section1Button2"
             type="button"
-            onclick="window.location.href ='www.google.com';"
+            onclick=" window.open('http:/\/google.com','_blank')"
           >
             About Riafy
           </button>
@@ -589,7 +513,7 @@
           <a class="footerLinks" id="footerLink5" href="#contactus"
             >Contact Us</a
           >
-          <a class="footerLinks" id="footerLink6" href="#">FAQ</a>
+          <a class="footerLinks" id="footerLink6" href="./faq.html">FAQ</a>
           <div class="footerSubSectionBG">
             <p id="footerCopyright">©2019. All rights reserved</p>
           </div>
