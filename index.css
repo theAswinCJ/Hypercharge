@@ -1423,8 +1423,15 @@ a:active {
 }
 @media (min-width: 768px) {
   .LPsection10 {
-    grid-template-columns: 10% 23.3% 10% 23.3% 10% 23.3%;
-    grid-template-areas: "section10SubTitle section10SubTitle section10SubTitle illustration6 illustration6 illustration6" "section10Title section10Title section10Title illustration6 illustration6 illustration6" "section10Body section10Body section10Body illustration6 illustration6 illustration6" "section10Icon1 section10Desc1 section10Icon2 section10Desc2 section10Icon3 section10Desc3" "section10Icon1 section10Value1 section10Icon2 section10Value2 section10Icon3 section10Value3";
+    grid-template-columns: 10% 40% 10% 40%;
+    grid-template-areas:
+      "section10SubTitle  section10SubTitle illustration6  illustration6"
+      "section10Title  section10Title illustration6  illustration6"
+      "section10Body  section10Body illustration6  illustration6"
+      "section10Icon1 section10Desc1 section10Icon2 section10Desc2  "
+      "section10Icon1 section10Value1 section10Icon2 section10Value2  "
+      "section10Icon3 section10Desc3 section10Desc3 section10Desc3  "
+      "section10Icon3 section10Value3 section10Value3 section10Value3  ";
   }
   #section10Title {
     margin: 0;
@@ -1563,6 +1570,7 @@ a:active {
     padding-left: 5%;
   }
 }
+
 @media (min-width: 1024px) {
   .footerLinks {
     width: 150px;
@@ -1578,6 +1586,22 @@ a:active {
   margin-top: 24px;
 }
 
+#section10Value3 {
+  width: 50%;
+  justify-self: start;
+}
+
+#section10Value1 {
+  margin-bottom: 50px;
+}
+
+#section10Icon1 {
+  padding-bottom: 50px;
+}
+
+#section10Icon2 {
+  padding-bottom: 50px;
+}
 @media (min-width: 768px) {
   .headerLinks {
     margin: 0px;
