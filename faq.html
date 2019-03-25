@@ -22,6 +22,19 @@
 
     <link rel="stylesheet" type="text/css" href="faq.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <script>
+      function showHideBurger() {
+        var headerLinks = document.getElementsByClassName("headerLinks");
+        for (link of headerLinks) {
+          if (link.style.display.toString() == "grid") {
+            link.style.display = "none";
+          } else {
+            link.style.display = "grid";
+          }
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -40,6 +53,7 @@
               id="HeaderHamburger"
               src="Assets/hamburger.png"
               alt="Hamburger menu"
+              onclick="showHideBurger()"
             />
 
             <a class="headerLinks" id="headerLink1" href="./index.html#services"

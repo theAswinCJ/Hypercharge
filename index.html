@@ -55,17 +55,33 @@
               onclick="showHideBurger()"
             />
 
-            <a class="headerLinks" id="headerLink1" href="#services"
+            <a
+              class="headerLinks hamburgerLinks"
+              id="headerLink1"
+              href="#services"
               >Services</a
             >
-            <a class="headerLinks" id="headerLink2" href="#aboutus">About Us</a>
-            <a class="headerLinks" id="headerLink3" href="#process"
+            <a
+              class="headerLinks hamburgerLinks"
+              id="headerLink2"
+              href="#aboutus"
+              >About Us</a
+            >
+            <a
+              class="headerLinks hamburgerLinks"
+              id="headerLink3"
+              href="#process"
               >Our Process</a
             >
-            <a class="headerLinks" id="headerLink4" href="#why"
+            <a class="headerLinks hamburgerLinks" id="headerLink4" href="#why"
               >Why HyperCharge</a
             >
-            <a class="headerLinks" id="headerLink5" href="./faq.html">FAQ</a>
+            <a
+              class="headerLinks hamburgerLinks"
+              id="headerLink5"
+              href="./faq.html"
+              >FAQ</a
+            >
 
             <button
               class="buttonOutline"
@@ -520,5 +536,28 @@
         </div>
       </div>
     </div>
+    <script>
+      (function() {
+        var above768 = true;
+        window.addEventListener("resize", e => {
+          // console.log("resized");
+          if (window.innerWidth >= 768) {
+            above768 = true;
+            var headerLinks = document.getElementsByClassName("headerLinks");
+            for (link of headerLinks) {
+              link.style.display = "grid";
+            }
+          } else {
+            if (above768) {
+              above768 = false;
+              var headerLinks = document.getElementsByClassName("headerLinks");
+              for (link of headerLinks) {
+                link.style.display = "none";
+              }
+            }
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

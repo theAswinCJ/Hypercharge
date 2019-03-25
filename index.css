@@ -572,8 +572,30 @@ a:active {
   padding: 10% 5%;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "logo hamburger";
+  grid-template-areas:
+    "logo hamburger"
+    "headerLink1 headerLink1"
+    "headerLink2 headerLink2"
+    "headerLink3 headerLink3"
+    "headerLink4 headerLink4"
+    "headerLink5 headerLink5";
   align-items: center;
+}
+
+#headerLink1 {
+  grid-area: headerLink1;
+}
+#headerLink2 {
+  grid-area: headerLink2;
+}
+#headerLink3 {
+  grid-area: headerLink3;
+}
+#headerLink4 {
+  grid-area: headerLink4;
+}
+#headerLink5 {
+  grid-area: headerLink5;
 }
 .headerLinks {
   display: none;
@@ -648,21 +670,7 @@ a:active {
     justify-self: end;
     width: 130px;
   }
-  #headerLink1 {
-    grid-area: headerLink1;
-  }
-  #headerLink2 {
-    grid-area: headerLink2;
-  }
-  #headerLink3 {
-    grid-area: headerLink3;
-  }
-  #headerLink4 {
-    grid-area: headerLink4;
-  }
-  #headerLink5 {
-    grid-area: headerLink5;
-  }
+
   .Header {
     grid-template-columns: 20% 12% 12% 12% 16% 8% 20%;
     grid-template-areas: "logo headerLink1 headerLink2 headerLink3 headerLink4 headerLink5 section1ContactButton";
@@ -1558,6 +1566,27 @@ a:active {
 @media (min-width: 1024px) {
   .footerLinks {
     width: 150px;
+  }
+}
+
+.headerLinks {
+  padding: 16px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#headerLink1 {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .headerLinks {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: none;
+  }
+
+  #headerLink1 {
+    margin-top: 0px;
   }
 }
 
