@@ -1,0 +1,18 @@
+pipelines:
+  default:
+    - step:
+        name: Hypercharge Deploy
+        deployment: production
+        script:
+          - pipe: atlassian/aws-s3-deploy:0.2.2
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: "us-east-1"
+              S3_BUCKET: "hypercharge"
+              LOCAL_PATH: $(pwd)
+              ACL: "public-read"
+              CACHE_CONTROL: "max-age=3600"
+              EXPIRES: "2018-10-01T00:00:00+00:00"
+              DELETE_FLAG: "true"
+              EXTRA_ARGS: "--follow-symlinks"
