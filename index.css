@@ -266,6 +266,7 @@ a:active {
 }
 .logo {
   width: 120px;
+  cursor: pointer;
 }
 .prefixMargins {
   margin-top: 0;
@@ -1358,22 +1359,116 @@ a:active {
     "section10Icon2 section10Value2"
     "section10Icon3 section10Desc3"
     "section10Icon3 section10Value3"
-    "section10getInputFormGroup section10getInputFormGroup";
+    "section10InputFormContainer section10InputFormContainer";
   align-items: center;
   justify-items: center;
 }
 
+#section10InputFormContainer {
+  grid-area: section10InputFormContainer;
+  width: 80%;
+}
+
+#section10InputFormContainer {
+  padding-top: 5%;
+}
+
+.input {
+  width: 100%;
+}
+.input h5 {
+  padding: 0px;
+  margin: 0px;
+  line-height: 0px;
+  padding-bottom: 20px;
+}
+
 #section10getInputFormGroup {
+  width: 100%;
   grid-area: section10getInputFormGroup;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "input1 input2";
+  justify-items: start;
+  grid-template-columns: 100%;
+  grid-template-areas: "section10inputTitle " " section10inputBody" "input1" "input2" "section10inputButton";
+}
+
+#input2TextElement {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  #section10getInputFormGroup {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "section10inputTitle section10inputTitle" "section10inputBody section10inputBody" "input1 input2" " section10inputButton section10inputButton";
+  }
+
+  #input2TextElement {
+    margin-top: 0px;
+  }
+
+  #section10inputTitle {
+    padding: 30px 0px;
+  }
+
+  #section10inputBody {
+    padding-bottom: 60px;
+  }
+
+  #section10inputButton {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+  }
+}
+#section10inputTitle {
+  grid-area: section10inputTitle;
+  text-align: center;
+  justify-self: center;
+  line-height: auto;
+  padding: 0px;
+  margin: 0px;
+  padding: 20px 0px 10px 0px;
+}
+#section10inputBody {
+  grid-area: section10inputBody;
+  text-align: center;
+  justify-self: center;
+  padding-bottom: 30px;
+}
+#section10inputButton {
+  margin: 0px;
+  padding: 0px;
+  align-self: end;
+  margin: 20px 0px;
+  justify-self: center;
+}
+
+@media (min-width: 560px) {
+  #section10inputButton {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  #section10inputButton {
+    width: 200px;
+  }
 }
 input {
-  width: 100%;
+  width: 90%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  border: 2px solid #f1f1f1;
+  border-radius: 0px;
+
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
+  color: #4f5059;
+  letter-spacing: 0.3px;
+  text-align: left;
+  line-height: 0px;
 }
 #input1 {
   grid-area: input1;
@@ -1381,6 +1476,10 @@ input {
 
 #input2 {
   grid-area: input2;
+}
+
+#section10inputButton {
+  grid-area: section10inputButton;
 }
 
 #section10SubTitle {
@@ -1451,7 +1550,7 @@ input {
       "section10Icon1 section10Value1 section10Icon2 section10Value2"
       "section10Icon3  section10Desc3 section10Desc3 section10Desc3"
       "section10Icon3   section10Value3 section10Value3 section10Value3"
-      "section10getInputFormGroup section10getInputFormGroup section10getInputFormGroup section10getInputFormGroup";
+      "section10InputFormContainer section10InputFormContainer section10InputFormContainer section10InputFormContainer";
   }
   #section10Title {
     margin-top: 0;
@@ -1475,7 +1574,7 @@ input {
       "section10Icon1 section10Value1 section10Icon2 section10Value2  "
       "section10Icon3 section10Desc3 section10Desc3 section10Desc3  "
       "section10Icon3 section10Value3 section10Value3 section10Value3  "
-      "section10getInputFormGroup section10getInputFormGroup section10getInputFormGroup section10getInputFormGroup";
+      "section10InputFormContainer section10InputFormContainer section10InputFormContainer section10InputFormContainer";
   }
   #section10Title {
     margin: 0;
@@ -1621,6 +1720,10 @@ input {
   }
 }
 
+#section1ContactButton {
+  align-items: center;
+}
+
 .headerLinks {
   padding: 16px 0;
   border-bottom: 1px solid #f1f1f1;
@@ -1703,4 +1806,8 @@ input {
     url("./Assets/fonts/montserrat-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+}
+
+#section10InputFormContainer {
+  display: none;
 }
