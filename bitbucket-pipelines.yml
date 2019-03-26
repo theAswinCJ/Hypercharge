@@ -1,0 +1,10 @@
+image: atlassian/default-image:2
+
+pipelines:
+  default:
+    - step:
+        services:
+          - docker
+        script:
+        - s3 --region "us-east-1" rm s3://hypercharge
+        - s3 --region "us-east-1" sync . s3://hypercharge
