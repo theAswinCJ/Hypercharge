@@ -1347,10 +1347,42 @@ a:active {
   overflow: hidden;
   display: grid;
   grid-template-columns: 35% 65%;
-  grid-template-areas: "section10SubTitle section10SubTitle" "section10Title section10Title" "illustration6 illustration6" "section10Body section10Body" "section10Icon1 section10Desc1" "section10Icon1 section10Value1" "section10Icon2 section10Desc2" "section10Icon2 section10Value2" "section10Icon3 section10Desc3" "section10Icon3 section10Value3";
+  grid-template-areas:
+    "section10SubTitle section10SubTitle"
+    "section10Title section10Title"
+    "illustration6 illustration6"
+    "section10Body section10Body"
+    "section10Icon1 section10Desc1"
+    "section10Icon1 section10Value1"
+    "section10Icon2 section10Desc2"
+    "section10Icon2 section10Value2"
+    "section10Icon3 section10Desc3"
+    "section10Icon3 section10Value3"
+    "section10getInputFormGroup section10getInputFormGroup";
   align-items: center;
   justify-items: center;
 }
+
+#section10getInputFormGroup {
+  grid-area: section10getInputFormGroup;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "input1 input2";
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+#input1 {
+  grid-area: input1;
+}
+
+#input2 {
+  grid-area: input2;
+}
+
 #section10SubTitle {
   grid-area: section10SubTitle;
 }
@@ -1410,7 +1442,16 @@ a:active {
 @media (min-width: 560px) {
   .LPsection10 {
     grid-template-columns: 17.5% 32.5% 17.5% 32.5%;
-    grid-template-areas: "section10SubTitle section10SubTitle section10SubTitle section10SubTitle" "section10Title section10Title section10Title section10Title" "illustration6 illustration6 illustration6 illustration6 " "section10Body section10Body section10Body section10Body" "section10Icon1 section10Desc1 section10Icon2 section10Desc2" "section10Icon1 section10Value1 section10Icon2 section10Value2" "section10Icon3  section10Desc3 section10Desc3 section10Desc3" "section10Icon3   section10Value3 section10Value3 section10Value3";
+    grid-template-areas:
+      "section10SubTitle section10SubTitle section10SubTitle section10SubTitle"
+      "section10Title section10Title section10Title section10Title"
+      "illustration6 illustration6 illustration6 illustration6 "
+      "section10Body section10Body section10Body section10Body"
+      "section10Icon1 section10Desc1 section10Icon2 section10Desc2"
+      "section10Icon1 section10Value1 section10Icon2 section10Value2"
+      "section10Icon3  section10Desc3 section10Desc3 section10Desc3"
+      "section10Icon3   section10Value3 section10Value3 section10Value3"
+      "section10getInputFormGroup section10getInputFormGroup section10getInputFormGroup section10getInputFormGroup";
   }
   #section10Title {
     margin-top: 0;
@@ -1433,7 +1474,8 @@ a:active {
       "section10Icon1 section10Desc1 section10Icon2 section10Desc2  "
       "section10Icon1 section10Value1 section10Icon2 section10Value2  "
       "section10Icon3 section10Desc3 section10Desc3 section10Desc3  "
-      "section10Icon3 section10Value3 section10Value3 section10Value3  ";
+      "section10Icon3 section10Value3 section10Value3 section10Value3  "
+      "section10getInputFormGroup section10getInputFormGroup section10getInputFormGroup section10getInputFormGroup";
   }
   #section10Title {
     margin: 0;
