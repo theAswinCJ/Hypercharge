@@ -1,18 +1,10 @@
 pipelines:
   default:
     - step:
-        name: Build and Test
-        script:
-          - npm install
-          - npm test
-          - npm run dist
-        artifacts:
-          - dist/**
-    - step:
         name: Deploy
         deployment: production
         script:
-          - pipe: atlassian/aws-s3-deploy:0.2.1
+          - pipe: hypercharge/website-s3-deploy
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
