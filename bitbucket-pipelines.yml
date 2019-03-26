@@ -1,10 +1,10 @@
 pipelines:
   default:
     - step:
-        name: Deploy
+        name: Hypercharge Deploy
         deployment: production
         script:
-          - pipe: hypercharge/website-s3-deploy
+          - pipe: atlassian/aws-s3-deploy:0.2.2
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
