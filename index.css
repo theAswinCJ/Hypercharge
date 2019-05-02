@@ -96,6 +96,7 @@ button {
   display: inline-block;
   padding: 0px;
   cursor: pointer;
+  outline: none;
 }
 
 .buttonLink {
@@ -1844,6 +1845,16 @@ input {
   font-style: normal;
 }
 
-#section10InputFormContainer {
-  display: none;
+#section10inputButton {
+  margin: 3% 0%;
+}
+
+.buttonHoverAnim {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonHoverAnim:hover {
+  border-radius: 0px;
 }
