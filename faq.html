@@ -15,6 +15,13 @@
     />
     <meta name="theme-color" content="#FFD648" />
     <meta property="og:type" content="website" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/jquery.serialize-object.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -321,5 +328,34 @@
         </div>
       </div>
     </div>
+    <script>
+      //Submit data to google sheets
+      var $form = $("#section10getInputFormGroup"),
+        url =
+          "https://script.google.com/macros/s/AKfycbwVtIV7Hbw3YI2TVWGt1-5xD7N17x6QGaYoL4CRWJJgtMeTjv4/exec";
+
+      $("#section10inputButton").on("click", function(e) {
+        e.preventDefault();
+        let name = document.getElementById("input1Element").value;
+        let phone = document.getElementById("input2Element").value;
+        if (name.length > 0 && phone.length > 0) {
+          var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serializeObject(),
+            success: () => {
+              swal(
+                "Success",
+                "We have received your details. We will reach out to you soon",
+                "success"
+              );
+            }
+          });
+        } else {
+          swal("Error", "Both name and phone number are required.", "error");
+        }
+      });
+    </script>
   </body>
 </html>
