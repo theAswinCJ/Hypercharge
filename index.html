@@ -640,15 +640,18 @@
 
       $("#section10inputButton").on("click", function(e) {
         e.preventDefault();
-        var jqxhr = $.ajax({
-          url: url,
-          method: "GET",
-          dataType: "json",
-          data: $form.serializeObject(),
-          success: () => {
-            alert("Your request has been submitted");
-          }
-        });
+        var name = document.getElementById("input1Element").value;
+        var phone = document.getElementById("input2Element").value;
+        console.log(name, phone);
+        // var jqxhr = $.ajax({
+        //   url: url,
+        //   method: "GET",
+        //   dataType: "json",
+        //   data: $form.serializeObject(),
+        //   success: () => {
+        //     alert("Your request has been submitted");
+        //   }
+        // });
       });
     </script>
   </body>
