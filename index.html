@@ -655,6 +655,9 @@
                 "We have received your details. We will reach out to you soon",
                 "success"
               );
+            },
+            error: () => {
+              swal("Network Error", "Unable to talk to the internet", "error");
             }
           });
         } else {
