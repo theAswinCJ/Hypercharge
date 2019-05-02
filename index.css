@@ -1844,10 +1844,6 @@ input {
   font-style: normal;
 }
 
-#section10inputButton {
-  margin: 3% 0%;
-}
-
 .buttonHoverAnim {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
