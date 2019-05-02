@@ -271,7 +271,7 @@
                 <input
                   id="input1Element"
                   type="text"
-                  name="Your Name"
+                  name="name"
                   placeholder="Name"
                 /><br />
               </div>
@@ -280,7 +280,7 @@
                 <input
                   id="input2Element"
                   type="number"
-                  name="Your Contact Number"
+                  name="phone_number"
                   placeholder="Phone Number"
                 />
               </div>
@@ -350,6 +350,9 @@
                 "We have received your details. We will reach out to you soon",
                 "success"
               );
+            },
+            error: () => {
+              swal("Network Error", "Unable to talk to the internet", "error");
             }
           });
         } else {
