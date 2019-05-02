@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./JS/jquery.serialize-object.min.js"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -47,6 +47,7 @@
     <title>HyperCharge by Riafy</title>
 
     <link rel="stylesheet" type="text/css" href="index.css" />
+
     <script>
       function showHideBurger() {
         var headerLinks = document.getElementsByClassName("headerLinks");
@@ -646,7 +647,11 @@
           dataType: "json",
           data: $form.serializeObject(),
           success: () => {
-            alert("Your request has been submitted");
+            swal(
+              "Success",
+              "We have received your details. We will reach out to you soon",
+              "success"
+            );
           }
         });
       });
