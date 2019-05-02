@@ -652,16 +652,23 @@
             success: () => {
               swal(
                 "Success",
-                "We have received your details. We will reach out to you soon",
+                "We have received your details. We will reach out to you soon.",
                 "success"
               );
             },
             error: () => {
-              swal("Network Error", "Unable to talk to the internet", "error");
+              swal(
+                "Network Error",
+                "Please check your network connection and try again.",
+                "error"
+              );
             }
           });
         } else {
-          swal("Error", "Both name and phone number are required.", "error");
+          swal(
+            "You missed something",
+            "Please enter your name and phone number."
+          );
         }
       });
     </script>

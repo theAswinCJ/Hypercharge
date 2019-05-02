@@ -1466,7 +1466,6 @@ input {
   color: #4f5059;
   letter-spacing: 0.3px;
   text-align: left;
-  line-height: 0px;
 }
 #input1 {
   grid-area: input1;

@@ -3,8 +3,8 @@
 }
 
 #illustration7 {
-  width: 70%;
   align-self: center;
+  grid-area: illustration1;
 }
 
 #section1Button2 {
