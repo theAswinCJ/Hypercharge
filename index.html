@@ -15,6 +15,13 @@
     />
     <meta name="theme-color" content="#FFD648" />
     <meta property="og:type" content="website" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/jquery.serialize-object.min.js"></script>
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -550,7 +557,7 @@
                 <input
                   id="input1Element"
                   type="text"
-                  name="Your Name"
+                  name="name"
                   placeholder="Name"
                 /><br />
               </div>
@@ -559,7 +566,7 @@
                 <input
                   id="input2Element"
                   type="number"
-                  name="Your Contact Number"
+                  name="phone_number"
                   placeholder="Phone Number"
                 />
               </div>
@@ -567,7 +574,7 @@
               <button
                 class=" buttonMargins buttonHoverAnim"
                 id="section10inputButton"
-                type="button"
+                type="submit"
               >
                 Submit
               </button>
@@ -625,6 +632,24 @@
           }
         });
       })();
+
+      //Submit data to google sheets
+      var $form = $("#section10getInputFormGroup"),
+        url =
+          "https://script.google.com/macros/s/AKfycbwVtIV7Hbw3YI2TVWGt1-5xD7N17x6QGaYoL4CRWJJgtMeTjv4/exec";
+
+      $("#section10inputButton").on("click", function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+          url: url,
+          method: "GET",
+          dataType: "json",
+          data: $form.serializeObject(),
+          success: () => {
+            alert("Your request has been submitted");
+          }
+        });
+      });
     </script>
   </body>
 </html>
