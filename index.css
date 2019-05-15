@@ -830,6 +830,10 @@ a:active {
 #section4Body {
   grid-area: section4Body;
 }
+
+#section5FBVideoDesc {
+  margin-top: 5%;
+}
 @media (min-width: 768px) {
   .LPsection4 {
     justify-items: left;
@@ -841,12 +845,16 @@ a:active {
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas: "section5SubTitle" "section5Title" "section5StatTitle1" "section5StatDesc1" "section5StatTitle2" "section5StatDesc2" "section5StatTitle3" "section5StatDesc3";
+  grid-template-areas: "section5SubTitle" "section5Title" "section5StatTitle1" "section5StatDesc1" "section5StatTitle2" "section5StatDesc2" "section5StatTitle3" "section5StatDesc3" "fbvideo";
   align-items: center;
   justify-items: center;
 }
 .statisticBody {
   display: none;
+}
+
+#LPsection5FBvideo {
+  grid-area: fbvideo;
 }
 #section5SubTitle {
   grid-area: section5SubTitle;
@@ -873,15 +881,33 @@ a:active {
 #section5StatDesc3 {
   grid-area: section5StatDesc3;
 }
+
+#section5StatBody1 {
+  grid-area: section5StatBody1;
+}
+
+#section5StatBody2 {
+  grid-area: section5StatBody2;
+}
+
+#section5StatBody3 {
+  grid-area: section5StatBody3;
+}
+
 @media (min-width: 560px) {
   .LPsection5 {
     grid-template-columns: 50% 50%;
-    grid-template-areas: "section5SubTitle section5SubTitle" "section5Title section5Title" "section5StatTitle1 section5StatTitle2" "section5StatDesc1 section5StatDesc2" "section5StatTitle3 section5StatTitle3" "section5StatDesc3 section5StatDesc3";
+    grid-template-areas: "section5SubTitle section5SubTitle" "section5Title section5Title" "section5StatTitle1 section5StatTitle2" "section5StatDesc1 section5StatDesc2" "section5StatTitle3 section5StatTitle3" "section5StatDesc3 section5StatDesc3" "fbvideo fbvideo";
   }
 }
+
+#LPsection5FBvideo {
+  margin-top: 8%;
+}
+
 @media (min-width: 768px) {
   .statisticBody {
-    display: flex;
+    display: grid;
     width: 80%;
     text-align: center;
     margin: 0;
@@ -891,7 +917,7 @@ a:active {
   }
   .LPsection5 {
     grid-template-columns: 33% 33% 33%;
-    grid-template-areas: "section5SubTitle section5SubTitle section5SubTitle" "section5Title section5Title section5Title" "section5StatTitle1 section5StatTitle2 section5StatTitle3" "section5StatDesc1 section5StatDesc2 section5StatDesc3";
+    grid-template-areas: "section5SubTitle section5SubTitle section5SubTitle" "section5Title section5Title section5Title" "section5StatTitle1 section5StatTitle2 section5StatTitle3" "section5StatDesc1 section5StatDesc2 section5StatDesc3" "section5StatBody1 section5StatBody2 section5StatBody3" "fbvideo fbvideo fbvideo";
   }
 }
 .LPsection6 {
