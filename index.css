@@ -332,6 +332,7 @@ a:active {
     justify-content: left;
   }
 }
+
 @media (min-width: 1440px) {
   .logo {
     width: 190px;
@@ -845,7 +846,7 @@ a:active {
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas: "section5SubTitle" "section5Title" "section5StatTitle1" "section5StatDesc1" "section5StatTitle2" "section5StatDesc2" "section5StatTitle3" "section5StatDesc3" "fbvideo";
+  grid-template-areas: "section5SubTitle" "section5Title" "section5StatTitle1" "section5StatDesc1" "section5StatTitle2" "section5StatDesc2" "section5StatTitle3" "section5StatDesc3";
   align-items: center;
   justify-items: center;
 }
@@ -853,9 +854,6 @@ a:active {
   display: none;
 }
 
-#LPsection5FBvideo {
-  grid-area: fbvideo;
-}
 #section5SubTitle {
   grid-area: section5SubTitle;
 }
@@ -897,12 +895,47 @@ a:active {
 @media (min-width: 560px) {
   .LPsection5 {
     grid-template-columns: 50% 50%;
-    grid-template-areas: "section5SubTitle section5SubTitle" "section5Title section5Title" "section5StatTitle1 section5StatTitle2" "section5StatDesc1 section5StatDesc2" "section5StatTitle3 section5StatTitle3" "section5StatDesc3 section5StatDesc3" "fbvideo fbvideo";
+    grid-template-areas: "section5SubTitle section5SubTitle" "section5Title section5Title" "section5StatTitle1 section5StatTitle2" "section5StatDesc1 section5StatDesc2" "section5StatTitle3 section5StatTitle3" "section5StatDesc3 section5StatDesc3";
   }
 }
 
 #LPsection5FBvideo {
-  margin-top: 8%;
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+#LPsection5FBvideo h4 {
+  padding: 5%;
+}
+
+@media (min-width: 480px) {
+  #LPsection5FBvideo h4 {
+    padding: 3%;
+  }
+}
+
+@media (min-width: 580px) {
+  #LPsection5FBvideo h4 {
+    padding: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  #LPsection5FBvideo h4 {
+    padding: 1.5%;
+    padding-top: 1%;
+  }
+
+  #LPsection5FBvideo {
+    margin-bottom: 6%;
+  }
+}
+
+@media (min-width: 1080px) {
+  #LPsection5FBvideo h4 {
+    padding: 1%;
+    margin-top: 3%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -917,7 +950,7 @@ a:active {
   }
   .LPsection5 {
     grid-template-columns: 33% 33% 33%;
-    grid-template-areas: "section5SubTitle section5SubTitle section5SubTitle" "section5Title section5Title section5Title" "section5StatTitle1 section5StatTitle2 section5StatTitle3" "section5StatDesc1 section5StatDesc2 section5StatDesc3" "section5StatBody1 section5StatBody2 section5StatBody3" "fbvideo fbvideo fbvideo";
+    grid-template-areas: "section5SubTitle section5SubTitle section5SubTitle" "section5Title section5Title section5Title" "section5StatTitle1 section5StatTitle2 section5StatTitle3" "section5StatDesc1 section5StatDesc2 section5StatDesc3" "section5StatBody1 section5StatBody2 section5StatBody3";
   }
 }
 .LPsection6 {
@@ -1627,7 +1660,7 @@ input {
     align-self: start;
   }
   #illustration6 {
-    width: 80%;
+    width: 50%;
   }
 
   #contactItem3 {
@@ -1756,11 +1789,27 @@ input {
   .footerLinks {
     padding: 20px;
     text-align: left;
-    width: 120px;
+    width: 140px;
   }
   .footerSubSectionBG {
     padding: 1.5%;
     padding-left: 5%;
+  }
+}
+
+#LPsection5FBvideo {
+  min-height: 250px;
+}
+
+@media (min-width: 560px) {
+  #LPsection5FBvideo {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  #LPsection5FBvideo {
+    min-height: 500px;
   }
 }
 
