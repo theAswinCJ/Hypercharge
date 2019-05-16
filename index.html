@@ -711,7 +711,8 @@
         e.preventDefault();
         let name = document.getElementById("input1Element").value;
         let phone = document.getElementById("input2Element").value;
-        if (name.length > 0 && phone.length > 0) {
+        let company = document.getElementById("input3Element").value;
+        if (name.length > 0 && phone.length > 0 && company.length > 0) {
           var jqxhr = $.ajax({
             url: url,
             method: "GET",
@@ -735,7 +736,7 @@
         } else {
           swal(
             "You missed something",
-            "Please enter your name and phone number."
+            "Please enter your name,phone number and the company you work for."
           );
         }
       });
