@@ -776,11 +776,7 @@
           Swal.fire("You missed someting", "Please fill all the details.");
           loader.style.display = "none";
           buttonText.innerHTML = "Submit";
-        } else if (
-          emailRegex.test(email) == false ||
-          phone.length > 15 ||
-          phone.length < 5
-        ) {
+        } else if (emailRegex.test(email) == false || phone.length > 15) {
           if (emailRegex.test(email) == false) {
             Swal.fire("Invalid Email", "Please enter a valid email id.");
             loader.style.display = "none";
