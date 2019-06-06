@@ -79,12 +79,6 @@
 
   <body>
     <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"
-    ></script>
 
     <a name="home"></a>
     <div class="LandingPage">
@@ -740,6 +734,21 @@
           );
         }
       });
+    </script>
+
+    //Load FB Video. Placed here for faster speed loads
+    <script type="text/javascript">
+      function downloadJSAtOnload() {
+        var element = document.createElement("script");
+        element.src =
+          "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3";
+        document.body.appendChild(element);
+      }
+      if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
     </script>
   </body>
 </html>
